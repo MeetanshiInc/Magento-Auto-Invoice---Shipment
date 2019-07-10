@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Meetanshi_AutoInv>
+            <version>1.0.0</version>
+        </Meetanshi_AutoInv>
+    </modules>
+    <global>
+        <models>
+            <autoinv>
+                <class>Meetanshi_AutoInv_Model</class>
+            </autoinv>
+        </models>
+        <events>
+            <sales_order_place_after>
+                <observers>
+                    <autoinv_sales_order_observer>
+                        <class>Meetanshi_AutoInv_Model_Observer</class>
+                        <method>orderPlaceAfter</method>
+                    </autoinv_sales_order_observer>
+                </observers>
+            </sales_order_place_after>
+        </events>
+    </global>
+</config>

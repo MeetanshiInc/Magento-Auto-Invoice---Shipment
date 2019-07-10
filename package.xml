@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>meetanshi_autoinvoice</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>meetanshi_autoinvoice</summary>
+    <description>meetanshi_autoinvoice</description>
+    <notes>meetanshi_autoinvoice</notes>
+    <authors><author><name>Meetanshi</name><user>Meetanshi</user><email>support@meetanshi.com</email></author></authors>
+    <date>2018-11-24</date>
+    <time>07:21:09</time>
+    <contents><target name="magelocal"><dir><dir name="Meetanshi"><dir name="AutoInv"><dir><dir name="Model"><file name="Observer.php" hash="3535585b85b76f4f5fe8e95497cbd6b5"/><dir name="Source"><file name="Payment.php" hash="68824d6a400723c2b30de7ebddf22b33"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="62856f694ca4239d169efd218d22e3f8"/><file name="config.xml" hash="8d0e111549b9c68cd6f6b087ddfc20cb"/><file name="system.xml" hash="6ae9dd533418c6c9ef1920b09f312641"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir><dir name="modules"><file name="Meetanshi_AutoInv.xml" hash="351f862a9242ba49291abdde6081433b"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>7.1.0</max></php></required></dependencies>
+</package>

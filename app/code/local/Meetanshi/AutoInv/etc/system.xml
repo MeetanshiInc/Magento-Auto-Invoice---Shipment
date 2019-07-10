@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <meetanshi translate="label">
+            <label><![CDATA[<img src="https://meetanshi.com/media/logo.png" alt="Meetanshi" height="15" style="vertical-align:middle;"/>]]></label>
+            <sort_order>30</sort_order>
+        </meetanshi>
+    </tabs>
+    <sections>
+        <autoinv translate="label">
+            <label><![CDATA[Auto Invoice & Shipment]]></label>
+            <tab>meetanshi</tab>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+ 					<fields>
+                        <enabled translate="label">
+                            <label><![CDATA[Auto Invoice & Shipment]]></label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                        </enabled>
+                        <payment_method translate="label">
+                            <label>Payment Methods</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>autoinv/source_payment</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <depends><enabled>1</enabled></depends>
+                        </payment_method>
+                        <invoice translate="label">
+                            <label><![CDATA[Automatic Invoice Generation]]></label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <depends><enabled>1</enabled></depends>
+                        </invoice>
+                        <shipment translate="label">
+                            <label><![CDATA[Automatic Shipment Generation]]></label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <depends><enabled>1</enabled></depends>
+                        </shipment>
+                    </fields>
+                </general>
+			</groups>
+		</autoinv>
+    </sections>
+</config>
